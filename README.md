@@ -1,9 +1,8 @@
 # BerlinCO2
 
 This Project was created for the final project in CO2 Web Development.
-The Task was to create a Web Application. We choosed to create a Application for tourist in Berlin.
-The Main Function is to find Events and Restaurants. In the Future we want to provide a Route planner service. 
-Here User can pick Destinations and then automatically the perfect rout with directions shoudl be displayed. 
+The Task was to create a Web Application. I chose to create a Application for tourists in Berlin.
+The Main Function is to find Events and Restaurants. In the Future I want to provide a Route Planner service. with the planner, the user can pick Destinations and then the perfect route with directions should automatically be displayed. 
 
 ###### How to Start ######
 
@@ -19,7 +18,7 @@ Sightseeing: The User can see our Top 10 Sight in Berlin with a small discriptio
 If the User wants to to search for Restaurants, this page is the best for it. Here the User can search for any term like "Starbucks or general Asian food". 
 All the Userinput in Events and Food is saved an displayed, for the best UX.
 
-The Last Page "Planner" has only the Front-End, but no working Back-End. Here ass i already said the User can pick Destinations and then automatically the perfect route with directions should be displayed. 
+The Last Page "Planner" has only the Front-End, but no working Back-End. Here as i already said the user can pick Destinations and then automatically the perfect route with directions should be displayed. 
 
 ###### Dependencies ###### 
 
