@@ -1,9 +1,10 @@
 .header
 {
-    background-image: url(https://scontent-frt3-1.xx.fbcdn.net/v/t39.30808-6/s960x960/245322731_10158794084994355_3855959804287383599_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=e3f864&_nc_ohc=viXqpJVc1iAAX9WcM8Y&_nc_ht=scontent-frt3-1.xx&oh=00_AT90sevMTTRFbaQkHfx0jC6IyOTguT39CI0Lm5tg2E-_Yg&oe=61FCDD35) ;
+    background-image: url(../Images/Background/Grafik-Berlin.png);
     background-size: cover;
     background-position: 50% 40%;  
     padding-bottom: 20px;  
+    padding-top: 10px;
 }
 .header-container {
     position: relative;
@@ -12,11 +13,11 @@
 }
 .header-title-text
 {
-    position: absolute;
+    position: relative;
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 4.5vw;
+    font-size: 3.5vw;
 }
 .header-title-text h1
 {
@@ -28,7 +29,7 @@
     bottom: 20%;
     left:50%;
     transform: translate(-50%, -50%);
-    font-size: 3vw;
+    font-size: 2vw;
 }
   
 .grid-title-text
@@ -89,5 +90,5 @@ a, a:link, a:visited, a:hover, a:hover {
 
 .img-header
 {
-    opacity: 0;
+    opacity: 1;
 }
