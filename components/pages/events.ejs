@@ -1,0 +1,101 @@
+<%- include ('../partials/_header'); %>
+<head>
+    <title> BerlinTour | <%=title%></title>
+</head>
+<div class="headerback">
+    <div class="headline">
+            
+        <h1>Berlin Events</h1>
+
+    </div>
+    <div class="subtext">
+            <h3>Berlin is also known for creative events.</br> 
+            Here you can find everything from wine tastings to informative events.</br>
+            And much more that you can discover. For this we offer </br>
+            you an easy search to find your next event  </h3>
+    </div>
+</div>
+
+<div class="filter">
+    <!--Filter options is_free, start_date, end_date-->
+    <form action="/events" method="POST">
+        <div class="filter-list">       
+            <h2>Filters</h2>
+            <div class="filter-option container">            
+                <div class="checkbox">
+                    <input type="checkbox", id="freecheck", name="freeEvent", value="true", <%- value.is_free == true ? 'checked' : 'null' %>>
+                    <label for="freecheck">Free Event</label>                
+                </div>
+                <div class="startdate">
+                    <label>From</label>
+                    <input type="date", id="start", name="eventstart", min="2022-01-01", max="2030-01-01"> <!--=Date(value.start_date)--->
+                </div>      
+                <div class="enddate">
+                    <label>To</label>
+                    <input type="date", id="end", name="eventend", min="2022-01-01", max="2030-01-01" > <!--=Date(value.end_date)--->
+                </div>
+                <div class="applyfilter">              
+                    <button id="submit">Apply filter</button>      
+                </div>    
+            </div>
+        </div>    
+</div>
+
+<div class="biggrid">    
+        <div class="list-event">
+            <div class="gridview">       
+           <!-- Call API with Stored values fir filter-->
+            <% for (var key in events) { %>        
+               <div class="event-des">
+                   <div class="upperdes container">
+                        <div class="leftdes">
+                            <div class="eventname">
+                                <h2><a href="<%= events[key].event_site_url %>"><%= events[key].name %></a></h2>
+                            </div>
+                            <div class="yelp-cost container">
+                                <div class="buyinfo">
+                                    <% if (events[key].cost != null) { %>
+                                    <h2> Cost: <%= events[key].cost %>€</h2>
+                                            <% } else if (events[key].is_free == true) { %>
+                                    <h2>Free Event</h2> 
+                                            <% } else { %>   
+                                    <h2>Cost on event's website </h2>
+                                        <% } %>
+                                </div>
+                                <div class=" yelpstuff">
+                                    <a href="<%= events[key].event_site_url %>">
+                                        <img src="../Images/yelp_logos/Logo/Light_bg/CMYK/yelp_logo_cmyk.png"
+                                        style="height:38px;width:100px;display:block;float:right; ">
+                                        </a>
+                                </div>                                
+                            </div>
+                            <div class="realdes">                               
+                                <h2><%= events[key].description %>
+                                <a href="<%= events[key].event_site_url %>">
+                                (Read more)
+                                </a>
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="rightimg">
+                            <a href="<%= events[key].event_site_url %>">
+                                <img src="<%= events[key].image_url %>"                
+                                style="height:100%;width:300px;display:block">
+                                </a>
+                        </div>
+                   </div>
+                   <div class="lowerdes">                        
+                        <% if (events[key].location.address1 == "") { %>
+                            <h2><%=  events[key].location.display_address %></h2>
+                        <% } else { %>
+                            <h2> <%= events[key].location.address1%> <%= events[key].location.zip_code %></h2>                                    
+                        <% } %>                          
+                   </div>
+               </div>
+            <% }; %>
+            </div>   
+        </div>   
+</div>
+<link href="/css/eventsstyle.css" rel="stylesheet" >
+
+<%- include ('../partials/_footer'); %>

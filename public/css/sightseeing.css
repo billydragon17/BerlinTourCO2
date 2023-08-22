@@ -1,0 +1,93 @@
+body {
+
+    background-color: white;
+}
+
+.headline {
+
+    padding: 5px;     
+    font-size: 2em;
+    text-align: center;
+    color: white;
+   
+}
+
+.subtext {
+
+    text-align: center;    
+    line-height: 35px;
+    margin-top: 20%;   
+    font-size: 1.4em;
+    color: white;
+
+}
+
+.headerback {
+
+    background-image: url(../Images/Background/sight.jpg) ;
+    background-size: cover;
+    background-position: center;  
+    padding-bottom: 20px;   
+}
+
+.container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+
+}
+
+.attraction-list{
+
+    width: 70%;
+    height: 100%;
+}
+
+
+.containeratt {
+
+    display: flex;
+
+}
+
+.attraction{
+
+    margin: 20px;
+    padding: 10px;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    box-shadow: 1px 1px 1em rgba(15, 15, 15, 0.267);
+    width: 100%;
+
+}
+
+.attraction-head h2 {
+
+
+    font-family:Arial;
+    font-size: 1.6em;  
+
+
+}
+
+.image img{
+
+    width: 800px;
+    height: 520px;
+    object-fit: cover;
+
+}
+
+p.description {
+
+   
+    margin: 10px;
+    margin-left: 20px;
+    margin-top: 0px;        
+    font-family:Arial;
+    font-size: 1.2em;  
+    line-height: 30px;
+    text-align: justify;
+    
+}

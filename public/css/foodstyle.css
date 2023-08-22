@@ -1,0 +1,276 @@
+body {
+
+    background-color: white;
+}
+
+.headline {
+
+    padding: 5px;     
+    font-size: 2em;
+    text-align: center;
+    color: white;
+   
+}
+
+.subtext {
+
+    text-align: center;    
+    line-height: 35px;
+    margin-top: 20%;   
+    font-size: 1.4em;
+    color: white;
+
+}
+
+.headerback {
+
+    background-image: url(../Images/Background/berlinneo.jpg) ;
+    background-size: cover;
+    background-position: 50% 40%;  
+    padding-bottom: 20px;   
+}
+
+
+
+
+.filter{
+      
+    background-color: #e4e4e4;
+    padding: 15px;
+    box-shadow: 1px 1px 1em rgba(15, 15, 15, 0.267);
+
+}
+
+.filter-list {
+    
+    margin-left: 10%;
+    font-family:Arial;
+    font-size: 1.1em;
+    font-weight: bold;
+   
+
+}
+
+.filter-list h2 {
+
+    margin: 10px;  
+
+}
+
+.filter-option{
+
+    display: flex;
+    font-family:Arial;
+    font-size: 1.2em ;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.opencheckbox {
+
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    margin-left: 3%;  
+ }
+ 
+ .opencheckbox label {
+    
+    margin-left: 3%;  
+     
+ }
+ 
+ [type=checkbox] {
+
+    width: 1.1rem;
+    height: 1.1rem;
+    content: "";
+    display: block; 
+    top: 0;
+    left: 0;
+    border: 2px solid #555555;
+    border-radius: 3px;
+    background-color: white;
+    cursor: pointer;
+   
+  
+  }
+  
+  [type=checkbox]:checked:after {
+      background-color: currentcolor;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+
+    input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;        
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }   
+
+.quicksearch{
+
+    margin-left: 2%;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.quicksearch label  {
+    
+    margin-right: 5%;
+
+}
+
+.applyfilter {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3%
+}
+
+.applyfilter button{
+
+    border-radius: 4px;
+    background-color: #4CAF50;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;      
+    transition: all 0.5s;
+    cursor: pointer;   
+    width: 100px !important;
+    height: 30px;      
+
+}
+
+
+
+.biggrid {
+  
+    justify-content: center;
+    display: grid;
+    margin-top: 10px;
+}
+
+    
+.list-restaurants {
+
+    display: inline-block;
+    padding: 10px;  
+    margin-top: 20px;  
+    background: rgb(255, 255, 255);
+    width: 1300px    
+    
+}
+
+.gridview {
+
+    display: grid;
+    grid-template-columns: 50% 50%;    
+    margin: 0;
+
+}
+
+
+.itemholder {
+    
+    display: flex;  
+    margin: 10px;
+    padding-left: 20px;
+    width: 608px;
+    height: 205px;    
+    overflow: hidden;   
+    background-color: #e4e4e4;
+    box-shadow: 0 0 1em rgba(15, 15, 15, 0.267);
+}
+
+.resvalue {
+
+    height:200px;
+    width: 300px;    
+
+}
+
+.container {
+
+    position:relative;
+    width: 100%;
+    height: 57px;    
+    bottom: 20px;
+   
+}
+
+
+.yelpstar{
+
+    position:absolute;
+    height: 19px;
+    width:  118px; 
+    padding: 2px;
+    bottom: 0px;
+}
+
+.yelplogo{
+
+    position:absolute;
+    height: 38px;
+    width:  100px;     
+    padding: 2px;    
+    padding-left: 20px;
+    bottom: 0px;
+    right: 10px;
+    
+
+}
+
+
+.resimg {
+    
+    margin-left: 10px;
+    float: right;
+    height: 100%;
+    width: 300px;
+       
+}
+
+
+a, a:link, a:visited, a:hover, a:hover {
+    color: black;
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px
+  }
+
+/*
+In oder to Change standart text style like h2 needed a div class for that.
+*/
+.restName {
+
+    padding-top: 10px;
+    line-height: 25px;
+    font-size: 1.1em;    
+    margin: 0 ;
+    font-weight: bold;
+
+}
+
+.adresstext {
+
+    font-size: 1.25em;    
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    position:relative;
+    bottom: 20px;
+
+}

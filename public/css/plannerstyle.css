@@ -1,0 +1,258 @@
+body {
+
+    background-color: white;
+}
+
+
+.headline {
+
+    padding: 5px;
+    margin: 5px;   
+    font-size: 2em;
+    text-align: center;
+    color: white;
+   
+}
+
+.subtext {
+
+    text-align: center;    
+    line-height: 35px;
+    margin-top: 20%;   
+    font-size: 1.4em;
+    color: white;
+
+}
+
+.headerback {
+
+    background-image: url(../Images/Background/wallpaperbetter.jpg) ;
+    background-size: cover;
+    background-position: center bottom;  
+    padding-bottom: 20px;   
+}
+
+
+
+.planner {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    padding: 10px;
+    height: 5%;
+    background: white ;
+    height: min-content;
+    
+}
+
+
+.leftside {
+
+    position: relative;
+    margin: 5px;
+    background-color: white;
+    padding: 5px;
+    height: 25%;
+    width: 100%;
+    box-shadow: 0 0 1em rgba(15, 15, 15, 0.267);         
+
+}
+
+.middleside {
+
+    display: flex;    
+    width: 100%;
+    height: 25%;    
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.Headlinemap{
+
+    text-align: center;
+
+}
+
+
+.rightside {
+
+    position: relative;
+    margin: 5px;
+    background-color: white;
+    padding: 5px;
+    height: 25%;
+    width: 100%;
+
+}
+
+.list-destination {
+
+    background-color: white;  
+    margin: 15px;
+    height: 85%;    
+    overflow: scroll;    
+    overflow-x: hidden;    
+    width: auto;
+    
+}
+
+.destination {
+
+   position: relative;
+   text-align: center;
+   display: flex;  
+   margin-top: 15px; 
+   margin-bottom: 15px; 
+   margin-right: 10px;
+   padding-top: 10px;
+   padding-left: 15px;  
+   padding-bottom: 10px;
+   background-color: #c9c9c9c7;
+   box-shadow: 0 0 1em rgba(15, 15, 15, 0.116); 
+      
+   
+}
+
+.desname {
+
+   text-align: left;
+   line-height: 25px !important;   
+
+}
+
+.addbtn button {
+    
+    border-radius: 4px;
+    background-color: #4CAF50;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;      
+    transition: all 0.5s;
+    cursor: pointer;   
+
+    width: 55px;
+    height: 30px;    
+
+    position: absolute;
+    right: 10px;
+    top: 60px;
+          
+
+}
+
+.addbtn button:focus {
+    
+    border-radius: 4px;
+    background-color: #4CAF50;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;      
+    transition: all 0.5s;
+    cursor: pointer;   
+
+    width: 55px;
+    height: 30px;    
+
+    position: absolute;
+    right: 10px;
+    top: 60px;
+            
+
+}
+
+
+
+.planbtn {    
+    
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%);    
+    margin-bottom: 15px;
+    
+
+}
+
+.planbtn button {
+
+    border-radius: 4px;
+    background-color: #4CAF50;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;  
+    width: 150px;  
+    transition: all 0.5s;
+    cursor: pointer;    
+
+}
+
+.destination-choose {
+   
+    background-color: white;  
+    margin: 20px;    
+    height: 95%;
+    overflow: scroll;    
+    overflow-x: hidden;    
+    width: auto;
+    box-shadow: 0 0 1em rgba(15, 15, 15, 0.267);         
+
+}
+
+
+.imagedes {
+    
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;     
+    width: 100%;
+
+    
+}
+
+.information {
+    
+    display: flex; 
+    position: relative;
+    margin: 20px;
+    padding-left: 15px;
+    background-color: #c9c9c9c7;
+    box-shadow: 1px 1px 1em rgba(15, 15, 15, 0.116); 
+
+
+}
+
+.removebtn {
+
+
+    width: 80px;
+    position: absolute;
+    right: 2%;
+    top: 75%;
+    transform: translate(-2%, -75%);  
+
+}
+
+.removebtn button {
+
+    height: 100%;
+    width: 80%;
+    border-radius: 4px;
+    background-color: #b33434;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 12px;     
+    transition: all 0.5s;
+    cursor: pointer;   
+
+}
+
+.detailsdes {
+    
+    line-height: 10px;   
+
+}

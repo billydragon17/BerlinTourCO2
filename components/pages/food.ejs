@@ -1,0 +1,84 @@
+<!-- Because ejs file are in another directory than view ../ is needed -->
+<%- include ('../partials/_header'); %>
+<head>
+    <title> BerlinTour | <%=title%></title>
+</head>
+<div class="headerback">
+    <div class="headline">
+            
+        <h1>Berlin Food</h1>
+
+    </div>
+    <div class="subtext">
+            <h3>Berlin is not only traditional German food </br> 
+            We are culturally diverse and that reflects in the rerstaurants</br>
+            In Berlin, you can find all kinds of traditional cooking</br>
+            From Asian to the Middle East and typical American, we got it all</h3>
+    </div>
+</div>
+
+<div class="filter">
+    <!--Filter options is_free, start_date, end_date-->
+    <form action="/food" method="POST">
+        <div class="filter-list">       
+            <h2>Filters</h2>
+            <div class="filter-option">
+                <div class="opencheckbox">      
+                    <input type="checkbox", id="opencheck", name="openRest", value="true", <%- value.opennow == true ? 'checked' : 'null' %> >
+                    <label for="opencheck">Open now</label>
+                </div>
+                <div class="quicksearch">
+                    <label>Type:</label>
+                    <input type="text", id="search", name="quicksearchinput", placeholder="<%= value.term %>">
+                </div>            
+                <div class="applyfilter">              
+                    <button id="submit">Apply filter</button>      
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="biggrid">    
+    <div class="list-restaurants">
+        <!-- 187323 = location_id ;Call API with Stored values fir filter-->
+        <div class="gridview">       
+        <% for (var key in restaurants) { %>        
+            <div class="itemholder">
+                <div class="resvalue">
+                    <div class="restName">
+                        <h2><a href="<%= restaurants[key].url %>"><%= restaurants[key].name %></a></h2>
+                    </div>    
+                        <div class="container">
+                            <div class="yelpstar">
+                                <a href="<%= restaurants[key].url %>">
+                                <img src="Images/yelp_stars/web_and_ios/regular/regular_<%- restaurants[key].rating %>@3x.png"
+                                style="height:100%;width:100%;display:block">
+                                </a>
+                            </div>
+                            <div class="yelplogo">
+                                <a href="<%= restaurants[key].url %>">
+                                <img src="Images/yelp_logos/Logo/Light_bg/RGB/yelp_logo.png"
+                                style="height:100%;width:100%;display:block">
+                                </a>
+                            </div>
+                        </div> 
+                    <div class="adresstext">   
+                        <h3><%- restaurants[key].location.address1 %>,   <%- restaurants[key].location.zip_code %><h3>
+                    </div>    
+                </div>         
+                <div class="resimg">
+                    <a href="<%= restaurants[key].url %>">
+                    <img src="<%= restaurants[key].image_url %>"                
+                    style="height:100%;width:300px;display:block">
+                    </a>
+                </div>   
+            </div>
+        <% }; %>
+        </div>   
+    </div>   
+</div>
+<!-- Refer to css file for design -->
+<link href="/css/foodstyle.css" rel="stylesheet">
+
+<%-  include ('../partials/_footer'); %> 

@@ -1,0 +1,76 @@
+.bigcontainer-footer {
+
+    display: flex;   
+    background-color: #EFEFEF;
+    
+}
+
+
+.navbar-imag {
+
+    margin-left: 4%;
+    margin-top: 3%;
+}
+
+
+.logo-image {
+
+    width: 46px;
+    height: 46px;         
+    background: transparent url(../Images/Logo/LogoBerlin.png) center;
+    background-size: cover ;
+    margin-left: 10%;
+    
+}
+
+.pagefooter {
+
+    display: flex;    
+    margin-left: 4%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    
+}
+
+.container-navbarfooter {
+    display: flex;        
+}
+
+.navfooter {
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin: 0;
+    padding: 0;    
+    font-family:Arial;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.navfooter li {
+    
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    padding-top: 5px;
+    list-style-type: none;    
+    font-size: 1.2em !important;
+    font-weight: normal !important;
+
+}
+
+.navfooter a {
+
+    display: block;
+    font-family:Arial;
+    position: relative;
+    color: black;    
+    text-decoration: none;
+    
+}
+
+.navfooter a:hover {
+    color: black;
+    text-decoration: underline;
+
+}

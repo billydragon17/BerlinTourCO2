@@ -1,0 +1,65 @@
+<%- include ('../partials/_header'); %>
+<head>
+    <title> BerlinTour | <%=title%></title>
+</head>
+<div class="header">
+    <div class="header-container">
+        <img class="img-header" src="https://scontent-frt3-1.xx.fbcdn.net/v/t39.30808-6/s960x960/245322731_10158794084994355_3855959804287383599_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=e3f864&_nc_ohc=viXqpJVc1iAAX9WcM8Y&_nc_ht=scontent-frt3-1.xx&oh=00_AT90sevMTTRFbaQkHfx0jC6IyOTguT39CI0Lm5tg2E-_Yg&oe=61FCDD35">
+        <div class="header-title-text">
+            <h1>Welcome to Berlin</h1>
+        </div>
+        <div class="header-subtext">
+            <p>Your online tour guide, at your service</p>
+        </div>
+    </div>
+</div>
+
+<div class="pages">
+    <ul class="grid-container">
+        <li class="grid-item-container">
+            <a href="http://localhost:3000/events">
+            <img src="https://circulareconomy.europa.eu/sites/all/themes/cecon_theme/images/events.jpg">
+            <div>
+                <h2 class="grid-title-text">Events</h2>
+                <p class="grid-subtext">
+                    Want to know what's happening in Berlin?
+                    See upcoming events the you can join here.
+                </p>
+            </div>
+            </a>
+        </li>
+        <li class="grid-item-container">
+            <a href="http://localhost:3000/sightseeing">
+            <img src="https://www.berlin-city-tour.de/media/1147/large-6.jpg">
+            <h2 class="grid-title-text">Sightseeing</h2>
+            <p class="grid-subtext">
+                Berlin is one of the leading cities of the 21st century.
+                See what it has to offer here.
+            </p>
+            </a>
+        </li>
+        <li class="grid-item-container">
+            <a href="http://localhost:3000/food">
+            <img src="https://berlinfoodstories.com/wp-content/uploads/2020/03/Beba-Delicatessen-Berlin-Takeaway-Delivery-Food-Jewish-Mitte.jpg">
+            <h2 class="grid-title-text">Food</h2>
+            <p class="grid-subtext">
+                Berlin is one the the most diverse cities in the world.
+                Visit restaurants with authentic cuisine from all around the world.
+            </p>
+            </a>
+        </li>
+        <li class="grid-item-container">
+            <a href="http://localhost:3000/planner">
+            <img src="http://cdn-locations.tripomatic.com/attractions-maps/berlin-attractions-map-large.jpg">
+            <h2 class="grid-title-text">Planner</h2>
+            <p class="grid-subtext">
+                Trouble planning you trip?
+                The built-in planner can help you organize and create the route that best suits you.
+            </p>
+            </a>
+        </li>
+    </ul>
+</div>
+<link rel="stylesheet" href="/css/overviewstyle.css">
+<%- include ('../partials/_footer'); %> 
+

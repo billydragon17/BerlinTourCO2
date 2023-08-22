@@ -1,0 +1,72 @@
+<!-- Because ejs file are in another directory than view ../ is needed -->
+<%- include ('../partials/_header'); %>
+<head>
+    <title> BerlinTour | <%=title%></title>
+</head>
+<div class="headerback">
+    <div class="headline">
+            
+        <h1>Tour planner</h1>
+
+    </div>
+    <div class="subtext">
+
+        <h3>Even though we are one of the smallest states in Germany, we have the most diverse culture. </br> 
+        We have districts that look completely different but are right next to each other. We provide you a free </br>
+        tour planner for Berlin. You can choose all your destination you want to go or choose a existing tour.</br>
+        After choose the tour you want we provide a map with the best route through Berlin</h3>
+    
+    </div>
+</div>
+<div class="planner">
+   <div class="leftside">
+       <!-- Call API with Stored values (Name and Description)-->
+      <div class="list-destination"> 
+        <% for (var key in places) { %>       
+            <div class="destination">
+                <div class="desname">
+                    <h2><%- places[key].properties.name == null ? places[key].properties.street : places[key].properties.name %> </h2>
+                    <h4><%- places[key].properties.street %> <%- places[key].properties.housenumber %>, <%- places[key].properties.postcode %> </h4>
+                </div>
+                <div class="addbtn">                   
+                    <button > Add</button>                    
+                </div>
+            </div>
+            <% }; %>
+       </div>       
+            <div class="planbtn">
+                <button>
+                        <h3>Plan your trip</h3>
+                </button>
+            </div>        
+   </div>
+   <div class="middleside">
+            <div class="container">
+                <div class="Headlinemap">    
+                    <h2>This is your own Tourplan</h2>       
+                </div>
+                <div class="Map">    
+                    <img src="<%=PictureURL%>">       
+                </div>
+            </div>
+   </div>
+   <div class="rightside">
+     <div class="destination-choose">       
+         <% for (var key in places) { %>    
+         <div class="information desname"> 
+                        <div class="detailsdes desname">
+                            <h2><%- places[key].properties.name == null ? places[key].properties.street : places[key].properties.name %></h2>
+                            <h4><%- places[key].properties.street %> <%- places[key].properties.housenumber %>, <%- places[key].properties.postcode %> </h4>
+                        </div>
+                        <div class="removebtn">
+                            <button>Remove</button>
+                        </div>
+        </div>
+         <% }; %>
+    </div>
+   </div>
+</div>   
+<!-- Refer to css file for design -->
+<link href="/css/plannerstyle.css" rel="stylesheet">
+
+<%- include ('../partials/_footer'); %> 
