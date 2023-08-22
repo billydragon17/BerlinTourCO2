@@ -18,7 +18,8 @@ Events Page display all Events in Berlin current Time, but the User can Filter t
 Sightseeing: The User can see our Top 10 Sight in Berlin with a small discription.
 If the User wants to to search for Restaurants, this page is the best for it. Here the User can search for any term like "Starbucks or general Asian food". 
 All the Userinput in Events and Food is saved an displayed, for the best UX.
-The Last Page "Planner" has only the Front-End, but no working Back-End. Here ass i already said the User can pick Destinations and then automatically the perfect rout with directions shoudl be displayed. 
+
+The Last Page "Planner" has only the Front-End, but no working Back-End. Here ass i already said the User can pick Destinations and then automatically the perfect route with directions should be displayed. 
 
 ###### Dependencies ###### 
 
